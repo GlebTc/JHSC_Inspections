@@ -123,3 +123,9 @@ header
 {
     width: 100%;
 }
+
+.inspection__area__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
