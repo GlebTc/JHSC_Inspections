@@ -1,8 +1,13 @@
+import { FC } from 'react';
+import Header from './components/Header';
+import Form from './components/Form';
 
-function App() {
+
+const App: FC = () => {
   return (
-    <div className="App">
-
+    <div className="app">
+      <Header />
+      <Form />
     </div>
   );
 }

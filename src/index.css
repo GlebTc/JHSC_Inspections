@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.app {
+    background-color: #d4d3d3;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header
+{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(39, 80, 126);
+    color: #fff;
+    padding: 10px;
+    border-bottom: 5px solid rgb(114, 134, 177);
+    margin-bottom: 10px;
+}
+
+#form
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.date-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.component__container,
+.status__component__container,
+.area__component__container
+ {
+    width: 90%;
+    padding: 4px;
+    border: 2px solid rgb(39, 80, 126);
+    border-radius: 5px;
+}
+
+.component__container h1 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.frequency-radio-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+input {
+    margin: 0 10px;
+}
+
+.site-radio-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.radio_button {
+    margin-left: 25px;
+}
+
+.checkbox-container {
+    text-align: center;
+}
+
+.status__component__container{
+    display: flex;
+    flex-direction: column;
+}
+
+.area__component__container
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+.dropdown-container {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+}
+
+.dropdown-container label,
+.status_container label
+{
+    margin-right: 15px;
+}
