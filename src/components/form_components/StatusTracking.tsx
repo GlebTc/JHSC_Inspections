@@ -2,13 +2,13 @@ import {FC} from 'react';
 
 const StatusTracking: FC = () => {
     return(
-        // add text area with label
-        <div className="status__component__container">
-            <div className="status_container">
+        <div className="component__container">
+            <h1>Status</h1>
+            <div className="status__container">
                 <label htmlFor="status">Status</label>
-                <textarea id="status" name="status" rows={1} cols={30}></textarea>
+                <textarea id="status" name="status" rows={1} cols={34}></textarea>
             </div>
-            <div className="status_container">
+            <div className="status__container">
                 <label htmlFor="tracking">Tracking #</label>
                 <textarea id="tracking" name="tracking" rows={1} cols={30}></textarea>
             </div>

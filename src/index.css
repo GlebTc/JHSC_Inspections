@@ -5,7 +5,7 @@
 }
 
 .app {
-    background-color: #d4d3d3;
+    background-color: #e6e6e6;
     padding: 25px;
     display: flex;
     flex-direction: column;
@@ -14,7 +14,7 @@
 
 header
 {
-    width: 90%;
+    width: 95%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -24,7 +24,7 @@ header
     color: #fff;
     padding: 10px;
     border-bottom: 5px solid rgb(114, 134, 177);
-    margin-bottom: 10px;
+    margin-bottom: 35px;
 }
 
 #form
@@ -33,75 +33,93 @@ header
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
 }
 
-.date-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-
-.component__container,
-.status__component__container,
-.area__component__container
- {
-    width: 90%;
-    padding: 4px;
+.component__container
+{
+    width: 95%;
+    padding: 10px;
     border: 2px solid rgb(39, 80, 126);
     border-radius: 5px;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
 }
 
 .component__container h1 {
-    font-size: 1.5rem;
-    text-align: center;
+    margin-bottom: 15px;
 }
 
-.frequency-radio-container {
-    display: flex;
-    justify-content: space-around;
-}
-
-input {
-    margin: 0 10px;
-}
-
-.site-radio-container {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.radio_button {
-    margin-left: 25px;
-}
-
-.checkbox-container {
-    text-align: center;
-}
-
-.status__component__container{
-    display: flex;
-    flex-direction: column;
-}
-
-.area__component__container
+.radio__button
 {
-    display: flex;
-    justify-content: space-around;
+    margin-right: 40px;
+    width: 25%;
+    min-width: 21%;
 }
 
-.dropdown-container {
-    width: 45%;
-    display: flex;
-    justify-content: center;
-}
-
-.dropdown-container label,
-.status_container label
+.radio__button input,
+.checkbox__container input
 {
     margin-right: 15px;
+}
+
+.inspection__type__container,
+.site__radio__container
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++CLEAN TO HERE++++++++++++++++++++++++++++++++*/
+
+.status__container,
+.inspection__comment__container,
+.dropdown-container,
+.manager__contact,
+.item__container
+{
+    margin: 5px;
+}
+
+.status__container label,
+.inspection__comment__container label,
+.dropdown-container label,
+.manager__contact label,
+.item__container label 
+{
+    margin-right: 25px;
+}
+
+#reminder__component__container {
+    padding: 0;
+    background-color: yellow;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+#reminder__component__container span {
+    color: red;
+}
+
+.hazards__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.item__container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.item__container label,
+.item__container p
+{
+    margin-bottom: 5px;
+}
+
+.item__container textarea
+{
+    width: 100%;
 }

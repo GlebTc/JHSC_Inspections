@@ -2,7 +2,8 @@ import {FC} from 'react';
 
 const InspectionArea: FC = () => {
     return(
-        <div className="area__component__container">
+        <div className="component__container">
+            <h1>Inspection Area</h1>
             <div className="dropdown-container">
                 <label htmlFor="floor">Floor</label>
                 <select name="floor" id="floor">

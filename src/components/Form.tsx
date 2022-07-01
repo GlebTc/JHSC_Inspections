@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import InspectionFrequency from './form_components/InspectionFrequency';   
+import InspectionFrequency from './form_components/InspectionType';   
 import Site from './form_components/Site';
 import Date from './form_components/Date';
 import ManagerCompleted from './form_components/ManagerCompleted';
