@@ -2,6 +2,7 @@ import {FC} from 'react';
 
 const Site: FC = () => {
     return(
+
         <div className="component__container">
             <h1>Site</h1>
             <div className="site__radio__container">
@@ -47,3 +48,9 @@ const Site: FC = () => {
 }
 
 export default Site;
+
+
+
+
+
+

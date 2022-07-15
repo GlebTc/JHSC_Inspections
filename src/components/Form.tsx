@@ -1,5 +1,4 @@
-import { FC } from 'react';
-import InspectionFrequency from './form_components/InspectionType';   
+import {FC} from 'react';
 import Site from './form_components/Site';
 import Date from './form_components/Date';
 import ManagerCompleted from './form_components/ManagerCompleted';
@@ -10,6 +9,7 @@ import Manager from './form_components/Manager';
 import Hazard from './form_components/NoHazard';
 import Item from './form_components/Item';
 import Reminder from './form_components/Reminder';
+import BaseFormCard from "../design-system/BaseFormCard";
 
 
 const Form: FC = () => {
@@ -20,20 +20,21 @@ const Form: FC = () => {
     }
 
     return (
-            <form id="form" onSubmit={handleSubmit}>
-                <InspectionFrequency />
-                <Site />
-                <Date />
-                <ManagerCompleted />
-                <StatusTracking />
-                <InspectionArea />
-                <InspectionComments />
-                <Manager />
-                <Reminder />
-                <Hazard  />
-                <Item />
-                <button type="submit">Submit</button>
-            </form> 
+        <form id="form" onSubmit={handleSubmit}>
+            <BaseFormCard title={"Type of Inspection"} radio={["Annual Inspection", "Follow Up", "Other"]}/>
+            <BaseFormCard title={"Site"}
+                          radio={["Juravinski", "MUMC", "Urgent Care", "St. Peter's", "WLMH", "Chedoke", "JCC", "General", "Other"]}/>
+            <Date/>
+            <ManagerCompleted/>
+            <StatusTracking/>
+            <InspectionArea/>
+            <InspectionComments/>
+            <Manager/>
+            <Reminder/>
+            <Hazard/>
+            <Item/>
+            <button type="submit">Submit</button>
+        </form>
     );
 }
 
